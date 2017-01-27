@@ -1,0 +1,12 @@
+
+title: Antonio Maradiaga
+#url: 'http://ajmaradiaga.com'
+redirect_to:
+  - http://ajmaradiaga.com/resume
+
+gems:
+  - jekyll-redirect-from
+  
+whitelist:
+  - jekyll-redirect-from
+  
