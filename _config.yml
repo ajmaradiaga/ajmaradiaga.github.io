@@ -1,14 +1,33 @@
 
 title: Antonio Maradiaga
-#url: 'http://ajmaradiaga.com'
-redirect_to:
-  - http://ajmaradiaga.com/resume
+
+description: My journey from a Software Development/Integration background to a Data Science/Engineer
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  email:me@ajmaradiaga.com
+  github:ajmaradiaga
+  linkedin:ajmaradiaga
+  twitter: ajmrdg
+
+url:http://www.ajmaradiaga.com
+
+
+permalink: /:title/
 
 gems:
-  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
   
 whitelist:
   - jekyll-redirect-from
   
 
 theme: jekyll-theme-minimal
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
