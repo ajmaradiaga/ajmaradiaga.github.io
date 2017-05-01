@@ -5,12 +5,12 @@ description: My journey from a Software Development/Integration background to a 
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  email:me@ajmaradiaga.com
-  github:ajmaradiaga
-  linkedin:ajmaradiaga
-  twitter:ajmrdg
+  email: me@ajmaradiaga.com
+  github: ajmaradiaga
+  linkedin: ajmaradiaga
+  twitter: ajmrdg
 
-url:http://www.ajmaradiaga.com
+url: http://www.ajmaradiaga.com
 
 
 permalink: /:title/
