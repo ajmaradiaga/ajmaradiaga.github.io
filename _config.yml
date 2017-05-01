@@ -23,7 +23,7 @@ whitelist:
   - jekyll-redirect-from
   
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-tactile
 
 exclude:
   - Gemfile
