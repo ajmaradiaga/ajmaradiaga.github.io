@@ -2,7 +2,7 @@
 layout: post
 title: Machine Learning is not 'Pixie Dust'
 ---
-![Google Cloud Next London]({{ site.baseurl}}/images/NEXT17_London.png)
+![Google Cloud Next London]({{ site.baseurl}}/images/NEXT17_London.png =250x250)
 
 Today, I had the opportunity to attend [Google Cloud Next](https://cloudplatformonline.com/Next-London-2017) in London. Even though the event focuses on their Cloud Platform offerings, there were various sessions about Big Data, Machine Learning, Tensorflow, GPUs and how businesses are using the Google Cloud Platform + ML to enhance their business processes.
 
@@ -20,6 +20,6 @@ Lately, there is quite some hype around Machine Learning / Deep Learning, and th
 
 In the end, the problem we are solving should benefit the business. This could be by creating a financial benefit, simplifying their processes, drive customer engagement, etc. 
 
-![Google Natural Language API]({{ site.baseurl }}/images/nl_api.png)
+![Google Natural Language API]({{ site.baseurl }}/images/nl_api.png =250x250)
 
 There are easy ways of enhancing a business using Machine Learning, that doesn't even require huge amounts of data, creating or training a model. It could be as simple as extracting what customers are saying about your business/product in Social Media and do sentiment analysis using one of the publicly available Machine Learning APIs, e.g. Google's [Natural Language API](https://cloud.google.com/natural-language/).
