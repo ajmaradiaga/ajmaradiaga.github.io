@@ -8,7 +8,7 @@ Today, I had the opportunity to attend [Google Cloud Next](https://cloudplatform
 
 It is exciting to see and understand how different industries (finance, travel, retail, e-commerce) use Machine Learning to understand their customers better or just automate tasks that a computer wasn't able to do before. For example, in Retail, ML can be used to recommend users a product based on their behaviour or find the right product based on their search, instead of "hardcoding" rules.
 
-I want to highlight something that Ram Ramanathan - Product Manager, Google, said during his presentation today
+I want to highlight something that [Ram Ramanathan](https://twitter.com/ramramanathan1) - Product Manager @ Google, said during his presentation today
 
 > Machine Learning is not Pixie dust. Is not something that you sprinkle over your business and it starts doing magical things.
 
