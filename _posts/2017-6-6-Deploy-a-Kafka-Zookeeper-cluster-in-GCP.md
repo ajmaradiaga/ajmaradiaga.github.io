@@ -6,7 +6,7 @@ title: How to Deploy a Zookeeper and Kafka cluster in Google Cloud Platform
 
 One of the great advantages of Google Cloud Platform is how easy and fast it is to run experiments. For example, you can easily spin up a [Zookeper](https://zookeeper.apache.org/) and [Kafka](https://kafka.apache.org/) cluster in a matter of minutes with very little configuration.
 
-For reference, you can find the sample properties files for each server in this repository: [Cluster-Config-Examples](https://github.com/ajmaradiaga/Cluster-Config-Examples)
+For reference, you can find the sample properties files for each server in this repository: [Cluster Config Examples](https://github.com/ajmaradiaga/cluster-config-examples)
 
 Note: The clusters below are not suitable for massive production use but good enough to run some tests
 
