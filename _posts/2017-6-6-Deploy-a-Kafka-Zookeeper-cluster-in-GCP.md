@@ -6,6 +6,8 @@ title: How to Deploy a Zookeeper and Kafka cluster in Google Cloud Platform
 
 One of the great advantages of Google Cloud Platform is how easy and fast it is to run experiments. For example, you can easily spin up a [Zookeper](https://zookeeper.apache.org/) and [Kafka](https://kafka.apache.org/) cluster in a matter of minutes with very little configuration.
 
+For reference, you can find the sample properties files for each server in this repository: [Cluster-Config-Examples](https://github.com/ajmaradiaga/Cluster-Config-Examples)
+
 Note: The clusters below are not suitable for massive production use but good enough to run some tests
 
 ## Zookeeper
@@ -14,7 +16,7 @@ Note: The clusters below are not suitable for massive production use but good en
 
 Lets spin up 3 machines that will form our Zookeeper cluster. The command below can be run from the [Google Cloud Shell](https://cloud.google.com/shell/docs/quickstart) or from your PC using the [Google Cloud Platform CLI](https://cloud.google.com/sdk/). All that you need to substitute are the project and instance name (e.g. zook-1)
 
-| *Variables*        | *Examples*           | *Instance*  |
+| **Variables** | **Examples** | **Instance** |
 | ------------- |:------------- | :----- |
 | [YOUR-PROJECT] | my-project | my-project |
 | [INSTANCE-NAME]     | zook-1, zook-2, zook-3     | zook-1 |
@@ -73,12 +75,12 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 
 Lets spin up 3 machines that will form our Kafka cluster. All that you need to substitute are the project name, instance name (e.g. kafka-1), host name and broker Id.
 
-| *Variables*        | *Examples*           | *Instance*  |
+| **Variables** | **Examples** | **Instance**  |
 | ------------- |:------------- | :----- |
-| [YOUR-PROJECT] | my-project | my-project |
-| [INSTANCE-NAME]    | kafka-1, kafka-2, kafka-3    | kafka-1 |
-| [HOSTNAME] | kafka-1, kafka-2, kafka-3 | kafka-1 |
-| BROKER-ID | 0, 1, 2 | 0 |
+| [YOUR-PROJECT]	| my-project | my-project |
+| [INSTANCE-NAME]	| kafka-1, kafka-2, kafka-3    | kafka-1 |
+| [HOSTNAME]	| kafka-1, kafka-2, kafka-3 | kafka-1 |
+| BROKER-ID	| 0, 1, 2 | 0 |
 
 
 ```bash
