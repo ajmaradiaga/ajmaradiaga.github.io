@@ -2,7 +2,7 @@
 layout: post
 title: How to Deploy a Kafka / Zookeeper cluster in Google Cloud Platform
 ---
-![Apache Kafka]({{ site.baseurl}}/images/NEXT17_London.png)
+![Apache Kafka]({{ site.baseurl}}/images/apache-kafka.png)
 
 One of the great advantages of Google Cloud Platform is how easy and fast it is to run experiments. For example, you can easily spin up a Zookeper and Kafka cluster in a matter of minutes with very little configuration.
 
