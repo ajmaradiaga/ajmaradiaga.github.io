@@ -8,11 +8,17 @@ One of the great advantages of Google Cloud Platform is how easy and fast it is 
 
 Note: The clusters below are not suitable for massive production use but good enough to run some tests
 
-### Zookeeper
+## Zookeeper
+
+![Apache Zookeeper]({{ site.baseurl}}/images/apache-zookeeper.png)
 
 Lets spin up 3 machines that will form our Zookeeper cluster. The command below can be run from the [Google Cloud Shell](https://cloud.google.com/shell/docs/quickstart) or from your PC using the [Google Cloud Platform CLI](https://cloud.google.com/sdk/). All that you need to substitute are the project and instance name (e.g. zook-1)
 
-We will name the Zookeeper VM instances: zook-1, zook-2, and zook-3
+| Variables        | Examples           | Instance  |
+| ------------- |:------------- | :----- |
+| [YOUR-PROJECT] | my-project | my-project |
+| [INSTANCE-NAME] | zook-1, zook-2, zook-3 | zook-1 |
+| ZOOKEEPER-ID | 1, 2, 3 | 1 |
 
 ```bash
 gcloud compute --project "[YOUR-PROJECT]" instances create "[INSTANCE-NAME]" --zone "europe-west1-c" --machine-type "n1-standard-1" --subnet "default" --maintenance-policy "MIGRATE" --service-account "1077112676311-compute@developer.gserviceaccount.com" --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --tags "http-server" --image "centos-7-v20170523" --image-project "centos-cloud" --boot-disk-size "10" --boot-disk-type "pd-standard" --boot-disk-device-name "[INSTANCE-NAME]"
@@ -56,9 +62,17 @@ Once we've update the settings of all Zookeeper server properties, we can start 
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
 
-### Kafka
+## Kafka
 
 Lets spin up 3 machines that will form our Kafka cluster. All that you need to substitute are the project name, instance name (e.g. kafka-1), host name and broker Id.
+
+| Variables        | Examples           | Instance  |
+| ------------- |:------------- | :----- |
+| [YOUR-PROJECT] | my-project | my-project |
+| [INSTANCE-NAME] | kafka-1, kafka-2, kafka-3 | kafka-1 |
+| [HOSTNAME] | kafka-1, kafka-2, kafka-3 | kafka-1 |
+| BROKER-ID | 0, 1, 2 | 0 |
+
 
 ```bash
 gcloud compute --project "[YOUR-PROJECT]" instances create "[INSTANCE-NAME]" --zone "europe-west1-c" --machine-type "n1-standard-1" --subnet "default" --maintenance-policy "MIGRATE" --service-account "1077112676311-compute@developer.gserviceaccount.com" --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --tags "http-server" --image "centos-7-v20170523" --image-project "centos-cloud" --boot-disk-size "10" --boot-disk-type "pd-standard" --boot-disk-device-name "[INSTANCE-NAME]"
