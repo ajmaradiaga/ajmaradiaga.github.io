@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How to Deploy a Kafka / Zookeeper cluster in Google Cloud Platform
+title: How to Deploy a Zookeeper and Kafka cluster in Google Cloud Platform
 ---
 ![Apache Kafka]({{ site.baseurl}}/images/apache-kafka.png)
 
-One of the great advantages of Google Cloud Platform is how easy and fast it is to run experiments. For example, you can easily spin up a Zookeper and Kafka cluster in a matter of minutes with very little configuration.
+One of the great advantages of Google Cloud Platform is how easy and fast it is to run experiments. For example, you can easily spin up a [Zookeper](https://zookeeper.apache.org/) and [Kafka](https://kafka.apache.org/) cluster in a matter of minutes with very little configuration.
 
 Note: The clusters below are not suitable for massive production use but good enough to run some tests
 
@@ -37,8 +37,6 @@ Modify the zookeeper properties to include all the instance details.
 nano config/zookeeper.properties
 ```
 
-Set the property values below:
-
 ```properties
 tickTime=2000
 initLimit=10
@@ -57,7 +55,29 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 
 ### Kafka
 
-Lets spin up 3 machines that will form our Kafka cluster. All that you need to substitute are the project and instance name (e.g. kafka-1)
+Lets spin up 3 machines that will form our Kafka cluster. All that you need to substitute are the project name, instance name (e.g. kafka-1), host name and broker Id.
 
+```bash
 gcloud compute --project "[YOUR-PROJECT]" instances create "[INSTANCE-NAME]" --zone "europe-west1-c" --machine-type "n1-standard-1" --subnet "default" --maintenance-policy "MIGRATE" --service-account "1077112676311-compute@developer.gserviceaccount.com" --scopes "https://www.googleapis.com/auth/devstorage.read_only","https://www.googleapis.com/auth/logging.write","https://www.googleapis.com/auth/monitoring.write","https://www.googleapis.com/auth/servicecontrol","https://www.googleapis.com/auth/service.management.readonly","https://www.googleapis.com/auth/trace.append" --tags "http-server" --image "centos-7-v20170523" --image-project "centos-cloud" --boot-disk-size "10" --boot-disk-type "pd-standard" --boot-disk-device-name "[INSTANCE-NAME]"
+```
 
+
+```bash
+nano config/server.properties
+```
+
+Set the property values below:
+
+```properties
+#Update the broker id
+broker.id=[BROKER-ID]
+zookeeper.connect=zook-1:2181,zook-2:2181,zook-3:2181
+
+host.name=[HOSTNAME]
+```
+
+Once we've update the settings of all Kafka server properties, we can start them
+
+```bash
+bin/kafka-server-start.sh config/server.properties
+```
