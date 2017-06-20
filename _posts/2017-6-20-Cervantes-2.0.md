@@ -12,7 +12,7 @@ In this project we will focus on Text Generation. Text Generation is part of [Na
 
 RNNs are [very effective](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) when understanding sequence of elements and have been used in the past to generate text. I will use a Recurrent Neural Network to generate text inspired on the works of Cervantes.
 
-![Basic RNN -> Unrolled RNN](images/basic_unrolled_RNN.png)
+![Basic RNN -> Unrolled RNN]({{ site.baseurl}}/images/basic_unrolled_RNN.png)
 
 In order to generate text, we will look at a class of Neural Network where connections between units form a directed cycle, called Recurrent Neural Network (RNNs). RNNs use an internal memory to process sequences of elements and is able to learn from the syntactic structure of text. Our model will be able to generate text based on the text we train it with.
 
@@ -24,7 +24,7 @@ Unfortunately, Cervantes passed away 500 years ago and he will not be publishing
 
 To solve our problem, we can use text from novels written by Cervantes in combination with the incredible power of Deep Learning, in particular RNNs, to generate text. Our deep learning model will be trained on existing Cervantes works and will output new text, based on the internal representation of the text it was trained on, in the Neural Network.  
 
-![LSTM Cell](images/lstm_cell.png)
+![LSTM Cell]({{ site.baseurl}}/images/lstm_cell.png)
 
 LSTM Cell
 
