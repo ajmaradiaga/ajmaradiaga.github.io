@@ -266,3 +266,19 @@ in fixing his affections should comply with Preciosa, and
 to keep secret whatever will be no wish on, as it was queens as his master had
 heard him, he strove to sing him, maintaining the sun favouring befall), which was not of it, both of them, served in her courtesy
 for the
+
+## References
+
+* NLP Tokenization - [https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html](https://nlp.stanford.edu/IR-book/html/htmledition/tokenization-1.html)
+
+* Vector Representations of Words - [https://www.tensorflow.org/tutorials/word2vec#motivation_why_learn_word_embeddings](https://www.tensorflow.org/tutorials/word2vec#motivation_why_learn_word_embeddings) 
+
+* Recurrent Neural Networks - [https://www.tensorflow.org/tutorials/recurrent](https://www.tensorflow.org/tutorials/recurrent) 
+
+* Alex Graves - Generating Sequences With Recurrent Neural Networks [https://arxiv.org/pdf/1308.0850.pdf](https://arxiv.org/pdf/1308.0850.pdf)
+
+* Christopher Olah - Understanding LSTM Networks [http://colah.github.io/posts/2015-08-Understanding-LSTMs/](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) 
+
+* Prasad Kawthekar, Raunaq Rewari, Suvrat Bhooshan - Evaluating Generative Models for Text Generation - [https://web.stanford.edu/class/cs224n/reports/2737434.pdf](https://web.stanford.edu/class/cs224n/reports/2737434.pdf) 
+
+* Ilya Sutskever, James Martens, Geoffrey Hinton - Generating Text with Recurrent Neural Networks - [http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf](http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf)
