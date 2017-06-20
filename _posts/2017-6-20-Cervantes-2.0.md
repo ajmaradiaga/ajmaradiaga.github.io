@@ -16,6 +16,8 @@ RNNs are [very effective](http://karpathy.github.io/2015/05/21/rnn-effectiveness
 
 In order to generate text, we will look at a class of Neural Network where connections between units form a directed cycle, called Recurrent Neural Network (RNNs). RNNs use an internal memory to process sequences of elements and is able to learn from the syntactic structure of text. Our model will be able to generate text based on the text we train it with.
 
+---------
+
 ## Problem
 
 [Miguel de Cervantes Saavedra](https://en.wikipedia.org/wiki/Miguel_de_Cervantes), was a Spanish writer who is regarded as the greater writer in Spanish language. Famous for his novel, [Don Quixote](https://en.wikipedia.org/wiki/Don_Quixote), considered one of the best fiction novels ever written.
@@ -33,6 +35,8 @@ For our model to learn, we will use a special type of RNN called LSTMs (Long Sho
 ## Repository
 
 The solution explained below is available on this Github repository: [Cervantes - Text Generation](https://github.com/ajmaradiaga/cervantes-text-generation)
+
+---------
 
 ## Dataset
 
@@ -89,6 +93,8 @@ Implement the function `token_lookup` to return a dict that will be used to toke
 This dictionary will be used to token the symbols and add the delimiter (space) around it.  This separates the symbols as it's own word, making it easier for the neural network to predict on the next word. 
 
 After preprocessing all data, it is saved in the local folder. This file is available in the repository as well - [preprocess.p](https://github.com/ajmaradiaga/cervantes-text-generation/blob/master/preprocess.p)
+
+---------
 
 ## Cervantes Neural Network
 
@@ -160,6 +166,8 @@ seq_length = 10
 # Learning Rate
 learning_rate = 0.001
 ```
+
+---------
 
 ## Training results
 
