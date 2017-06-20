@@ -42,40 +42,11 @@ Even though Miguel de Cervantes native language was Spanish, the text used to tr
 
 Our Dataset is small as it is composed of only 2 files - Don Quixote and Exemplary Novels with a total size of 3.4 MB. Bigger datasets work better when training an RNN but for our case that is very specific it will be enough. Some additional information of the contents of the files below:
 
-<table>
-  <tr>
-    <td>**File**</td>
-    <td></td>
-    <td>**Totals**</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>*Name*</td>
-    <td>*Size*</td>
-    <td>*Pages*</td>
-    <td>*Lines*</td>
-    <td>*Words*</td>
-    <td>*Unique Words*</td>
-  </tr>
-  <tr>
-    <td>DonQuixote.txt</td>
-    <td>2.3 MB</td>
-    <td>690</td>
-    <td>40,008</td>
-    <td>429,256</td>
-    <td>42154</td>
-  </tr>
-  <tr>
-    <td>ExemplaryNovels.txt</td>
-    <td>1.1 MB</td>
-    <td>303</td>
-    <td>17,572</td>
-    <td>189,037</td>
-    <td></td>
-  </tr>
-</table>
+| Name | Size | Pages | Lines | Words | Unique Words |
+|:--- |:---:|:---:| ---:| ----:| ----:| ----:| ----:| -----:|
+| DonQuixote.txt | 2.3 MB| 690 | 40,008 | 429,256 | 42,154 | 
+| ExemplaryNovels.txt | 1.1 MB | 303 | 17,572 | 189,037 |  |
+
 * Note: Values in the table above will change after preprocessing.
 
 There is some manual preprocessing that we will need to do as the text retrieved from Gutenberg Project contains additional content that is not necessary to train the model, for example:
@@ -118,6 +89,6 @@ Implement the function `token_lookup` to return a dict that will be used to toke
 - Dash ( -- )
 - Return ( \n )
 
-This dictionary will be used to token the symbols and add the delimiter (space) around it.  This separates the symbols as it's own word, making it easier for the neural network to predict on the next word. Make sure you don't use a token that could be confused as a word. Instead of using the token "dash", try using something like "||dash||".
+This dictionary will be used to token the symbols and add the delimiter (space) around it.  This separates the symbols as it's own word, making it easier for the neural network to predict on the next word. 
 
 After preprocessing all data, it is saved in the local folder. This file is available in the repository as well - [preprocess.p](https://github.com/ajmaradiaga/cervantes-text-generation/blob/master/preprocess.p)
