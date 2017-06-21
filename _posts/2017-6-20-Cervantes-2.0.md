@@ -10,11 +10,11 @@ title: Cervantes 2.0
 
 In this project we will focus on Text Generation. Text Generation is part of [Natural Language Processing](https://en.wikipedia.org/wiki/Natural_language_processing) and can be used to [transcribe speech to text](http://www.jmlr.org/proceedings/papers/v32/graves14.pdf), perform [machine translation](http://arxiv.org/abs/1409.3215), generate handwritten text, image captioning, generate new blog posts or news headlines. 
 
+In order to generate text, we will look at a class of Neural Network where connections between units form a directed cycle, called Recurrent Neural Network (RNNs). RNNs use an internal memory to process sequences of elements and is able to learn from the syntactic structure of text. Our model will be able to generate text based on the text we train it with.
+
 RNNs are [very effective](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) when understanding sequence of elements and have been used in the past to generate text. I will use a Recurrent Neural Network to generate text inspired on the works of Cervantes.
 
 ![Basic RNN -> Unrolled RNN]({{ site.baseurl}}/images/basic_unrolled_RNN.png)
-
-In order to generate text, we will look at a class of Neural Network where connections between units form a directed cycle, called Recurrent Neural Network (RNNs). RNNs use an internal memory to process sequences of elements and is able to learn from the syntactic structure of text. Our model will be able to generate text based on the text we train it with.
 
 ---------
 
@@ -35,6 +35,27 @@ For our model to learn, we will use a special type of RNN called LSTMs (Long Sho
 ## Repository
 
 The solution explained below is available on this Github repository: [Cervantes - Text Generation](https://github.com/ajmaradiaga/cervantes-text-generation)
+
+---------
+
+## Metrics
+
+The purpose of this project, is to create a model that will be able to generate text inspired in novels written by Miguel de Cervantes.
+
+The performance of our model will be measure by:
+- [Perplexity](https://en.wikipedia.org/wiki/Perplexity) is a commonly used evaluation metric when generating text. Perplexity tells us how many words is the model considering as an output, having a perplexity of 3 means that the model could choose 3 words at an equally likely probability, we want our perplexity be as low as possible since lower choice corresponds to a higher likelihood of choosing the actually correct one.
+
+    The typical measure reported in the papers is average per-word perplexity (often just called perplexity), which is equal to
+
+    $$e^{-\frac{1}{N}\sum_{i=1}^{N} \ln p_{\text{target}_i}} = e^{\text{loss}}$$
+
+    Our goal is to achieving a **perplexity of less than 3.** Which is lower than the perplexity achieved by [similar models](https://web.stanford.edu/class/cs224n/reports/2737434.pdf) used for text generation. 
+
+
+- Grammatically our model is able to:
+    - Open, close quotations
+    - Sentence length is similar to the median sentence length of the dataset. We will use the median as there is a large number of empty sentences (between paragraphs, separating chapters, after a title), which can skew our data. See histogram below.
+    - Create paragraphs
 
 ---------
 
@@ -61,12 +82,21 @@ There is some manual preprocessing that we will need to do as the text retrieved
 
 **Note:** The files included in the dataset folder no longer contain the additional content mentioned above.
 
+### Exploring our Datasets
+
+Lets extract text from our Datasets to get familiar with the data that we will be processing.
+
+We can see that our sentences are formed of 13 / 14 words. Paragraphs contain 5 or more sentences.
+
 ### Dataset Stats
+
+![Cervantes Sentence Histogram]({{ site.baseurl}}/images/cervantes-word-histogram.png)
 
 - Unique words: 39229
 - Number of chapters: 135
 - Average number of sentences in each chapters: 392.7925925925926
 - Number of lines: 53162
+- Median number of words in each line: 13
 - Average number of words in each line: 10.975941461946503
 
 ### Extra Preprocessing 
@@ -119,6 +149,14 @@ To give the model more power, we can add multiple layers of LSTMs to process the
 In order to prevent overfitting, we use [dropout](https://arxiv.org/pdf/1512.05287.pdf) between the LSTM layers.
 
 To calculate our models loss, we use [tf.contrib.seq2seq.sequence_loss] (https://www.tensorflow.org/api_docs/python/tf/contrib/seq2seq/sequence_loss), which is the weighted average cross-entropy (log-perplexity) per symbol.
+
+We want to minimize the average negative log probability of the target words:
+
+$$loss = -\frac{1}{N}\sum_{i=1}^{N} \ln p_{\text{target}_i}$$
+
+The typical measure reported in the papers is average per-word perplexity (often just called perplexity), which is equal to (equation below) and we will monitor its value throughout the training process.
+
+$$e^{-\frac{1}{N}\sum_{i=1}^{N} \ln p_{\text{target}_i}} = e^{\text{loss}}$$
 
 To optimise our model we use [AdamOptimizer](https://www.tensorflow.org/versions/r1.0/api_docs/python/tf/train/AdamOptimizer), which is a method for stochastic optimization - [paper](https://arxiv.org/pdf/1412.6980.pdf).
 
@@ -177,11 +215,24 @@ The table below captures the results of training the Cervantes Neural Network wi
 
 For a detailed view of the training loss, checkout the [training logs](https://github.com/ajmaradiaga/cervantes-text-generation/tree/master/logs) included with the project.
 
+How does our model performs when compared to our initial expectations (metrics/benchmark)?
+- Our benchmark was to create a model that achieves a perplexity of less than 3. Our model is achieving a perplexity of less than 1. Which means, it has a high likelihood of choosing the correct word.
+- The paragraph structure generated by our model is similar to the structure from our dataset.
+    - The sentences in the paragraph have betwen 10 and 15 words.
+    - The paragraphs are formed of 5 or more lines. 
+
+*Observations:*
+- In order to generate better quality of text, we  need a large text corpus and in this project we are limited by the amount of text we can use as an input. Saying that, the model is generating text that looks similar to the original text.
+- The same algorithm can be used to generate text for different subjects. For example, the same algorithm can be trained to generate text for [Barack Obama](https://en.wikipedia.org/wiki/Barack_Obama). There is a lot more text available for Obama ([books](https://www.amazon.co.uk/Barack-Obama/e/B001H6OA8E), [speeches](http://obamaspeeches.com/))
+- A 3 layer RNN takes a long time to train, it might be possible to achieve better results with it but it will need to be trained longer.
+
 ### Training Loss
 
 We can see that a learning rate of 0.01 is too large to train our Neural Network. When we trained it with 0.01, we were never able to achieve a train loss < 3. Another indicator of this is that the learning plateaus in both runs (0001, 0003); in *0001* it plateaus at around epoch 100 and in *0003* at around epoch 180.
 
-The training loss improved when we use a learning rate of 0.001. The lower learning rate improves our Neural network performance by -2.0. As the training is not plateauing, we are also able to train it longer. This is why we increase the epochs of run *0002* to 500.
+The training loss improved when we use a learning rate of 0.001. The lower learning rate improves our Neural network performance and we are getting closer to a perplexity of 1. Remember that the lower our perplexity, the better our model is at predicting the next work. 
+
+As the training is not plateauing, we are also able to train it longer. This is why we increase the epochs of run *0002* to 500.
 
 ### Sequence Length
 
@@ -201,6 +252,12 @@ Our best result in the the first 6 runs was run *0004*. If we train our network 
 
 ## Conclusion
 
+Based on the results, we can see that RNNs are very effective when understanding sequence of text and can be used to generate text.
+
+Our best performing RNN consists of 2 RNN layers of 256 in size. We added some dropout to prevent overfitting and used [Adam](https://www.tensorflow.org/api_docs/python/tf/train/AdamOptimizer) to optimise our model.
+
+Generating text is a hard problem to solve in Machine Learning. It takes  a long time to train a simple model and the larger the input the longer it will take to train the model properly. In our training, the models took close to an hour to train.
+
 Even though our train loss for the last run is less than 1, we can see in the samples below that the text generated by *run 0004* and *run 0007* models are similar is several ways:
 - They are both able to open and close quotations
 - The text makes more sense when compared with *run 0001*, which is expected as the sequence length (10) used to train both models is longer than *run 0001* (5)
@@ -215,6 +272,12 @@ Text Samples:
 - Run 0007:
     Quixote or cost him his squire, unless indeed his wife might follow him
     Don Quixote bade Sancho he settled three days with open his heart in fixing his affections should comply with Preciosa
+
+### Potential Improvements
+
+There are two ways which we could improve the results of our model:
+- Larger text corpus. We can search for more Cervantes novels available in English or we can train our model to learn Spanish, as it would be more probable to find the novels in Spanish than English.
+- Train our 3 layer, 20 sequence length RNN further. As our model is bigger, we could train it longer and potentially could have better results.
 
 -------
 
