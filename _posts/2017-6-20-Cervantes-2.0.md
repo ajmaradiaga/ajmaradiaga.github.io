@@ -47,7 +47,7 @@ The performance of our model will be measure by:
 
     The typical measure reported in the papers is average per-word perplexity (often just called perplexity), which is equal to
 
-    $$e^{-\frac{1}{N}\sum_{i=1}^{N} \ln p_{\text{target}_i}} = e^{\text{loss}}$$
+    ![Loss Equation]({{ site.baseurl}}/images/cervantes-perplexity-eq.png)
 
     Our goal is to achieving a **perplexity of less than 3.** Which is lower than the perplexity achieved by [similar models](https://web.stanford.edu/class/cs224n/reports/2737434.pdf) used for text generation. 
 
@@ -148,15 +148,15 @@ To give the model more power, we can add multiple layers of LSTMs to process the
 
 In order to prevent overfitting, we use [dropout](https://arxiv.org/pdf/1512.05287.pdf) between the LSTM layers.
 
-To calculate our models loss, we use [tf.contrib.seq2seq.sequence_loss] (https://www.tensorflow.org/api_docs/python/tf/contrib/seq2seq/sequence_loss), which is the weighted average cross-entropy (log-perplexity) per symbol.
+To calculate our models loss, we use [tf.contrib.seq2seq.sequence_loss](https://www.tensorflow.org/api_docs/python/tf/contrib/seq2seq/sequence_loss), which is the weighted average cross-entropy (log-perplexity) per symbol.
 
 We want to minimize the average negative log probability of the target words:
 
-$$loss = -\frac{1}{N}\sum_{i=1}^{N} \ln p_{\text{target}_i}$$
+![Loss Equation]({{ site.baseurl}}/images/cervantes-loss-eq.png)
 
 The typical measure reported in the papers is average per-word perplexity (often just called perplexity), which is equal to (equation below) and we will monitor its value throughout the training process.
 
-$$e^{-\frac{1}{N}\sum_{i=1}^{N} \ln p_{\text{target}_i}} = e^{\text{loss}}$$
+![Loss Equation]({{ site.baseurl}}/images/cervantes-perplexity-eq.png)
 
 To optimise our model we use [AdamOptimizer](https://www.tensorflow.org/versions/r1.0/api_docs/python/tf/train/AdamOptimizer), which is a method for stochastic optimization - [paper](https://arxiv.org/pdf/1412.6980.pdf).
 
