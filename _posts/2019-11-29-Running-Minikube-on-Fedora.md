@@ -3,7 +3,7 @@ layout: post
 title: Running minikube in Fedora
 ---
 
-To install and run minikube on [Fedora](https://getfedora.org/en/workstation/), we first need to install a Hypervisor. In the example below, I will be installing KVM by installing the virtualisation options available in Fedora (https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/). *Note: It is also possible to just install KVM: https://computingforgeeks.com/how-to-install-kvm-on-fedora/*.
+To install and run minikube on [Fedora](https://getfedora.org/en/workstation/), we first need to install a Hypervisor. In the example below, I will be installing KVM by installing the virtualisation options available in Fedora ([https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/](https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/)). *Note: It is also possible to just install KVM - [https://computingforgeeks.com/how-to-install-kvm-on-fedora/](https://computingforgeeks.com/how-to-install-kvm-on-fedora/)*.
 
 ## Fedora - Virtualisation
 
@@ -22,7 +22,7 @@ The commands above install the virtualisation libraries required by minikube.
 
 ## minikube and kubectl
 
-Now that KVM is installed in the system, I can proceed to download/install minikube and kubectl. Detailed instruction can be found here: minikube - https://kubernetes.io/docs/tasks/tools/install-minikube/ and kubectl - https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux.
+Now that KVM is installed in the system, I can proceed to download/install minikube and kubectl. Detailed instruction can be found here: [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) and [kubectl] (https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux).
 
 ```bash
 # minikube
