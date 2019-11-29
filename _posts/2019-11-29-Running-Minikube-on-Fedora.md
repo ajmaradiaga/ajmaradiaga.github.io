@@ -22,7 +22,7 @@ The commands above install the virtualisation libraries required by minikube.
 
 ## minikube and kubectl
 
-Now that KVM is installed in the system, I can proceed to download/install minikube and kubectl. Detailed instruction can be found here: [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) and [kubectl] (https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux).
+Now that KVM is installed in the system, I can proceed to download/install minikube and kubectl. Detailed instruction can be found here: [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) and [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux).
 
 ```bash
 # minikube
