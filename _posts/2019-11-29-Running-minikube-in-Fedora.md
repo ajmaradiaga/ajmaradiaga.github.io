@@ -3,7 +3,7 @@ layout: post
 title: Running minikube in Fedora
 ---
 
-To install and run minikube on [Fedora](https://getfedora.org/en/workstation/), we first need to install a Hypervisor. In the example below, I will be installing KVM by installing the virtualisation options available in Fedora ([https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/](https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/)). *Note: It is also possible to just install KVM - [https://computingforgeeks.com/how-to-install-kvm-on-fedora/](https://computingforgeeks.com/how-to-install-kvm-on-fedora/)*.
+To install and run minikube in [Fedora](https://getfedora.org/en/workstation/), we first need to install a Hypervisor. In the example below, I will be installing KVM by installing the virtualisation options available in Fedora ([https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/](https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/)). *Note: It is also possible to just install KVM - [https://computingforgeeks.com/how-to-install-kvm-on-fedora/](https://computingforgeeks.com/how-to-install-kvm-on-fedora/)*.
 
 ## Fedora - Virtualisation
 
@@ -19,6 +19,12 @@ sudo systemctl start libvirtd
 ```
 
 The commands above install the virtualisation libraries required by minikube.
+
+KVM might request for root password when initialising VMs. To make our life easier, just add your user as a member of the `libvirt` group created. Also, make sure that the user is a member of the `docker` group.
+
+```
+sudo usermod -a -G libvirt $USER
+```
 
 ## minikube and kubectl
 
