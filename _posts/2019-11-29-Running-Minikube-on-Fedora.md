@@ -1,4 +1,7 @@
-# Running minikube on Fedora
+---
+layout: post
+title: Running minikube in Fedora
+---
 
 To install and run minikube on [Fedora](https://getfedora.org/en/workstation/), we first need to install a Hypervisor. In the example below, I will be installing KVM by installing the virtualisation options available in Fedora (https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/). *Note: It is also possible to just install KVM: https://computingforgeeks.com/how-to-install-kvm-on-fedora/*.
 
