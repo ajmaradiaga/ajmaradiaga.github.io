@@ -7,10 +7,10 @@ There are times when we update an image used in a deployment and we want our k8s
 
 ```bash
 # Rolling update - the k8s deployment will update images to latest version
-`kubectl rollout restart deployment/client-deployment` 
+kubectl rollout restart deployment/client-deployment
 
 # Specify a k8s deployment to run an image with a specific tag
-kubectl set image deployment/[deployment-name] [container-name]=[image-name:tag-name]` 
+kubectl set image deployment/[deployment-name] [container-name]=[image-name:tag-name]
 ```
 
 ### References:
