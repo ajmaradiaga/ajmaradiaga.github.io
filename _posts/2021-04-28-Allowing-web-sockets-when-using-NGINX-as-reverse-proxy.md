@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Allowing web socket connections when using NGINX as reverse proxy
+title: Allowing web socket connection when using NGINX as reverse proxy
 ---
 
 *In this blog post I will cover what is required to allow web socket connections to your application when using NGINX as a reverse proxy.*
