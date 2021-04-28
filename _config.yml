@@ -14,10 +14,6 @@ footer-links:
   linkedin: ajmaradiaga
   twitter: ajmrdg
 
-disqus: ajmaradiaga
-
-google_analytics: UA-98388747-1
-
 permalink: /:title/
 
 gems:
