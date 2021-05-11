@@ -11,7 +11,7 @@ As I self-host most of the applications that I use, it was a matter of finding a
 
 Once I was running VS Code server, I was able to access it locally, via the local IP address, e.g. [http://192.168.90.100:8443/](http://192.168.90.100:8443/). I can now VPN to my local network and access the VS Code server. That being said, I want to access the service from anywhere without the need of VPNing to my local network, e.g. `https://my-vs-code-server.company.ltd`. 
 
-```yaml
+{% highlight json %}
 server {
         listen  443 ssl;
         server_name     my-vs-code-server.company.ltd;
@@ -24,7 +24,7 @@ server {
                 proxy_pass http://192.168.90.100:8443;
         }
 }
-```
+{% endhighlight %}
 <p align="center"><i>nginx.conf initial server configuration</i></p>
 
 As mentioned in the introduction, I use NGINX as a reverse proxy to grant access to different services I self-host. NGINX receives the request from the outside world and routes the connection to the local service. Above, a sample of the configuration added to my `nginx.conf` to allow configuration to the local service. When attempting to access the VS code server via `https://my-vs-code-server.company.ltd`, the connection was reaching NGINX but it the web socket connection was failing. I was able to see the error using the Web Developer > Console tools in my web browser. Below a sample of the console log.
