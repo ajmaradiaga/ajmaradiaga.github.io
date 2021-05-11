@@ -41,7 +41,6 @@ gems:
 whitelist:
   - jekyll-redirect-from
   
-
 theme: jekyll-theme-tactile
 
 exclude:

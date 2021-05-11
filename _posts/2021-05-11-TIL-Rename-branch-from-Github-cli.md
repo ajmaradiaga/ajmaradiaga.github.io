@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TIL: Rename a remote branch from Github CLI
+title: TIL - Rename a remote branch from Github CLI
 ---
 
 I've been playing with the Github CLI lately and thought it will be interesting to see if I can rename the `master` (default) branch to `main` in a couple of legacy repos. This is easily achieved by using the [Github API](https://docs.github.com/en/rest/reference/repos) via the [GitHub CLI](https://cli.github.com/)
