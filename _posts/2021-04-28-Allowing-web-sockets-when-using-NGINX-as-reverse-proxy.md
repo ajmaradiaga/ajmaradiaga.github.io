@@ -11,7 +11,7 @@ As I self-host most of the applications that I use, it was a matter of finding a
 
 Once I was running VS Code server, I was able to access it locally, via the local IP address, e.g. [http://192.168.90.100:8443/](http://192.168.90.100:8443/). I can now VPN to my local network and access the VS Code server. That being said, I want to access the service from anywhere without the need of VPNing to my local network, e.g. `https://my-vs-code-server.company.ltd`. 
 
-{% highlight json %}
+{% highlight nginx %}
 server {
         listen  443 ssl;
         server_name     my-vs-code-server.company.ltd;
@@ -29,7 +29,7 @@ server {
 
 As mentioned in the introduction, I use NGINX as a reverse proxy to grant access to different services I self-host. NGINX receives the request from the outside world and routes the connection to the local service. Above, a sample of the configuration added to my `nginx.conf` to allow configuration to the local service. When attempting to access the VS code server via `https://my-vs-code-server.company.ltd`, the connection was reaching NGINX but it the web socket connection was failing. I was able to see the error using the Web Developer > Console tools in my web browser. Below a sample of the console log.
 
-```
+{% highlight text %}
 Firefox can't establish a connection to the server at wss://my-vs-code-server.company.ltd/?reconnectionToken=731b9120-9851-43ad-81c6-2ec1d20af9e2&reconnection=false&skipWebSocketFrames=false. browserSocketFactory.ts:162:30
   ERR [remote-connection][Management   ][731b9…][initial][code.maradia.ga:80] socketFactory.connect() failed or timed out. Error: log.ts:296:11
   ERR Error: WebSocket close with status code 1006
@@ -46,13 +46,12 @@ log.ts:296:11
     y browserSocketFactory.ts:129
 log.ts:296:11
  WARN Ignoring the error while validating workspace folder vscode-remote://my-vs-code-server.company.ltd/config/workspace - WebSocket close with status code 1006 log.ts:290:11
-```
+{% endhighlight %}
 <p align="center"><i>Console log - Web socket errors</i></p>
 
 To allow web sockets via NGINX, we need to add a couple of proxy headers: `Upgrade` and `Connection`. Below a sample of the server configuration include the new proxy headers. Once the new `Upgrade` and `Connection` headers are added, NGINX will allow web socket connections.
 
-```yaml
-# Map
+{% highlight nginx %}
 map $http_upgrade $connection_upgrade {
         default upgrade;
         '' close;
@@ -76,7 +75,7 @@ server {
                 proxy_pass http://192.168.90.100:8443;
         }
 }
-```
+{% endhighlight %}
 <p align="center"><i>nginx.conf configuration required to allow web sockets</i></p>
 
 I hope this blog post helps you setting up/allowing web socket connections through NGINX whenever you have a service that requires this type of access. 
