@@ -49,6 +49,6 @@ I used the `qrgen.py` file as a base here. Removed the default text and added a 
 ### Additional changes I've done
 The launcher will show any `*.py` script under examples as an "app". In my case I wanted the apps to be displayed in a specific order. Therefore, I modified the `launcher.py` script to order the apps based on a number that can be prepended to the name.
 
-> You might be wondering.... where is the code? I'm going through the process of publishing the repo, so that you can just clone it and get started fast. No Python skills required :-)  
+> You might be wondering.... where is the code? You can find it here - [https://github.com/ajmaradiaga/sap-community-e-ink-badge](https://github.com/ajmaradiaga/sap-community-e-ink-badge). Go ahead, clone the repo, and sync some files to your Pimoroni Badger 2040. No Python skills required :-)  
 
 Thanks for reading this far. If you have any suggestions on additional functionality/apps that can be added to the badge, I encourage you to share them with me via the comments below.
