@@ -3,6 +3,8 @@ layout: post
 title: Create your SAP Community e-ink badge
 ---
 
+*In this blog post, I will share the details on how you can set up a digital badge for yourself using the [Pimoroni Badger 2040](https://shop.pimoroni.com/products/badger-2040) - a cool little e-ink device powered by a [Raspberry Pi RP2040](https://www.raspberrypi.com/products/rp2040/).*
+
 I'm very fond of e-ink devices. I like how reading on an e-ink device allows me to focus on the content. As much as I enjoy reading physical books, I enjoy the convenience and practicality of reading books on an e-ink device. On my phone, I've even set a colour filter ([a.k.a. grayscale mode](https://www.wired.com/story/grayscale-ios-android-smartphone-addiction/)) so that it looks more like an e-ink device and makes it a bit less distracting. I've even tried this on my laptop (not currently using it but I do switch to this mode now and then). In a previous blog post, I shared how you can keep up with the blog posts/news shared in SAP Community by using a Raspberry Pi 4 and an e-ink display ([SAP Community meets e-ink display: an RSS story](https://blogs.sap.com/2023/01/22/sap-community-meets-e-ink-display-an-rss-story/)).... and well, there is always space for another e-ink device 😃. Yesterday, I received a Pimoroni Badger 2040 and it's been a lot of fun to set it up with some of my details.
 
 ![SAP Community e-ink devices](../images/pimoroni-e-ink-devices.jpg)
