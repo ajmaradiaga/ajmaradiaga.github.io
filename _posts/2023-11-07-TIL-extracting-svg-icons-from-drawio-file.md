@@ -28,9 +28,9 @@ The Draw.io library file is an XML file with a JSON structure within the root no
 ]</mxlibrary>
 ```
 
-Once I was familiar with the structure of the library file, I proceeded to create a quick Python script to process the file(s) and "extract" the images from within it. In my case, I want to save the images as SVG and PNG files. You can find the latest version of the script below here - https://gist.github.com/ajmaradiaga/7d0d5a7a528db46f08b810d575d15916. 
+Once I was familiar with the structure of the library file, I proceeded to create a quick Python script to process the file(s) and "extract" the images from within it. In my case, I want to save the images as SVG and PNG files. You can find the latest version of the script below here - [https://gist.github.com/ajmaradiaga/7d0d5a7a528db46f08b810d575d15916](https://gist.github.com/ajmaradiaga/7d0d5a7a528db46f08b810d575d15916). 
 
-Python script:
+Python 🐍 script:
 
 ```python
 import base64
