@@ -1,4 +1,7 @@
-# Exploring the RSS feeds of the new SAP Community platform
+---
+layout: post
+title: Exploring the RSS feeds of the new SAP Community platform
+---
 
 *In this blog post, I will share how you can subscribe via RSS feeds to different components/areas available in the new platform. Some feeds are easily accessible, others aren't :-).*
 
