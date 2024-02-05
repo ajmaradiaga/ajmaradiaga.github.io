@@ -43,7 +43,7 @@ We've seen before how we can get the feed for the entire community. Now let's se
 
 ## Boards
 
-Within Khoros there is the concept of Boards. Within a board is where all content in a Khoros Community environment lives. Boards can be of different types of content, e.g. blog posts, discussions, events, questions, and knowledge base. This will vary depending on the area of the website you are visiting. For example, the [Enterprise Architecture](https://community.sap.com/t5/enterprise-architecture/gh-p/Enterprise-Architecture) interest group contains discussions, blog posts, events and knowledge base. Other areas, like the [Application Development](https://community.sap.com/t5/application-development/gh-p/application-development) interest group, contain only blog posts and discussions. We can get RSS feeds for each one of these boards by specifying the `board.id` in `/rss/board`, e.g. https://community.sap.com/khhcw49343/rss/board?board.id=application-developmentblog-board. The pattern followed to access the different content types via an RSS feed is: `https://community.sap.com/[COMMUNITY_ID]/rss/board?board.id=[BOARD-ID]`
+Within Khoros there is the concept of Boards. Within a board is where all content in a Khoros Community environment lives. Boards can be of different types of content, e.g. blog posts, discussions, events, questions, and knowledge base. This will vary depending on the area of the website you are visiting. For example, the [Enterprise Architecture](https://community.sap.com/t5/enterprise-architecture/gh-p/Enterprise-Architecture) interest group contains discussions, blog posts, events and knowledge base. Other areas, like the [Application Development](https://community.sap.com/t5/application-development/gh-p/application-development) interest group, contain only blog posts and discussions. We can get RSS feeds for each one of these boards by specifying the `board.id` in `/rss/board`, e.g. [https://community.sap.com/khhcw49343/rss/board?board.id=application-developmentblog-board](https://community.sap.com/khhcw49343/rss/board?board.id=application-developmentblog-board). The pattern followed to access the different content types via an RSS feed is: [`https://community.sap.com/[COMMUNITY_ID]/rss/board?board.id=[BOARD-ID]`](https://community.sap.com/[COMMUNITY_ID]/rss/board?board.id=[BOARD-ID])
 
 > Some sections of the platform, e.g. Blogs, Q&A, Discussions, include an Options menu and within it there might be `Subscribe to RSS feed` option. This is the easiest way to get the feed for a specific section.
 
@@ -58,24 +58,24 @@ Compared to the old platform, where there was a single place to create our blog 
 
 - Examples:  
   - SAP CodeJam blog posts: 
-    - Website: https://community.sap.com/t5/sap-codejam-blog-posts/bg-p/code-jamblog-board
-    - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=code-jamblog-board
+    - Website: [https://community.sap.com/t5/sap-codejam-blog-posts/bg-p/code-jamblog-board](https://community.sap.com/t5/sap-codejam-blog-posts/bg-p/code-jamblog-board)
+    - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=code-jamblog-board](https://community.sap.com/khhcw49343/rss/board?board.id=code-jamblog-board)
   - Application Development board blog posts: 
-    - Website: https://community.sap.com/t5/application-development-blog-posts/bg-p/application-developmentblog-board
-    - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=application-developmentblog-board
+    - Website: [https://community.sap.com/t5/application-development-blog-posts/bg-p/application-developmentblog-board](https://community.sap.com/t5/application-development-blog-posts/bg-p/application-developmentblog-board)
+    - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=application-developmentblog-board](https://community.sap.com/khhcw49343/rss/board?board.id=application-developmentblog-board)
 
 
 ### Questions & Answers
 
-Some areas in the platform include Q&A, e.g. Technology - https://community.sap.com/t5/technology/ct-p/technology, where you can ask and answer questions about SAP Business Technology Platform (SAP BTP). The questions and answers section is also a board so we can generate a feed using `/rss/board` and specifying the `board.id`. 
+Some areas in the platform include Q&A, e.g. Technology - [https://community.sap.com/t5/technology/ct-p/technology](https://community.sap.com/t5/technology/ct-p/technology), where you can ask and answer questions about SAP Business Technology Platform (SAP BTP). The questions and answers section is also a board so we can generate a feed using `/rss/board` and specifying the `board.id`. 
 
 Examples:
 - Enterprise Resource Planning:
-  - Website: https://community.sap.com/t5/enterprise-resource-planning-q-a/qa-p/erp-questions
-  - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=erp-questions
+  - Website: [https://community.sap.com/t5/enterprise-resource-planning-q-a/qa-p/erp-questions](https://community.sap.com/t5/enterprise-resource-planning-q-a/qa-p/erp-questions)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=erp-questions](https://community.sap.com/khhcw49343/rss/board?board.id=erp-questions)
 - Technology:
-  - Website: https://community.sap.com/t5/technology-q-a/qa-p/technology-questions
-  - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=technology-questions
+  - Website: [https://community.sap.com/t5/technology-q-a/qa-p/technology-questions](https://community.sap.com/t5/technology-q-a/qa-p/technology-questions)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=technology-questions](https://community.sap.com/khhcw49343/rss/board?board.id=technology-questions)
 
 
 ### Discussions
@@ -84,11 +84,11 @@ Want to follow the discussions of a particular area in SAP Community?
 
 Example:
 - SAP CodeJam discussions:
-  - Website: https://community.sap.com/khhcw49343/rss/board?board.id=code-jamforum-board
-  - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=code-jamforum-board
+  - Website: [https://community.sap.com/khhcw49343/rss/board?board.id=code-jamforum-board](https://community.sap.com/khhcw49343/rss/board?board.id=code-jamforum-board)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=code-jamforum-board](https://community.sap.com/khhcw49343/rss/board?board.id=code-jamforum-board)
 - Enterprise Architecture discussions: 
-  - Website: https://community.sap.com/t5/enterprise-architecture-discussions/bd-p/Enterprise-Architectureforum-board
-  - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=Enterprise-Architectureforum-board
+  - Website: [https://community.sap.com/t5/enterprise-architecture-discussions/bd-p/Enterprise-Architectureforum-board](https://community.sap.com/t5/enterprise-architecture-discussions/bd-p/Enterprise-Architectureforum-board)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=Enterprise-Architectureforum-board](https://community.sap.com/khhcw49343/rss/board?board.id=Enterprise-Architectureforum-board)
 
 ### Events
 
@@ -96,14 +96,14 @@ An RSS feed for events is also available. This is something that doesn't seem to
 
 Examples: 
 - SAP CodeJam events: 
-  - Website: https://community.sap.com/t5/sap-codejam/eb-p/codejam-events
-  - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=codejam-events
+  - Website: [https://community.sap.com/t5/sap-codejam/eb-p/codejam-events](https://community.sap.com/t5/sap-codejam/eb-p/codejam-events)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=codejam-events](https://community.sap.com/khhcw49343/rss/board?board.id=codejam-events)
 - SAP Community Calls: 
-  - Website URL: https://community.sap.com/t5/sap-community-calls/eb-p/community-calls
-  - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=community-calls
+  - Website URL: [https://community.sap.com/t5/sap-community-calls/eb-p/community-calls](https://community.sap.com/t5/sap-community-calls/eb-p/community-calls)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=community-calls](https://community.sap.com/khhcw49343/rss/board?board.id=community-calls)
 - Enterprise Architecture: 
-  - Website: https://community.sap.com/t5/enterprise-architecture-events/eb-p/Enterprise-Architectureoccasion-board
-  - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=enterprise-architectureoccasion-board
+  - Website: [https://community.sap.com/t5/enterprise-architecture-events/eb-p/Enterprise-Architectureoccasion-board](https://community.sap.com/t5/enterprise-architecture-events/eb-p/Enterprise-Architectureoccasion-board)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=enterprise-architectureoccasion-board](https://community.sap.com/khhcw49343/rss/board?board.id=enterprise-architectureoccasion-board)
 
 ### Knowledge Base
 
@@ -111,11 +111,11 @@ Some areas of SAP Community include a knowledge base. This in the end is a board
 
 Examples:
 - Career Corner Job Opportunities :
-  - Website: https://community.sap.com/t5/career-corner-job-opportunities/tkb-p/career-cornertkb-board
-  - RSS Feed: https://community.sap.com/khhcw49343/rss/board?board.id=career-cornertkb-board
+  - Website: [https://community.sap.com/t5/career-corner-job-opportunities/tkb-p/career-cornertkb-board](https://community.sap.com/t5/career-corner-job-opportunities/tkb-p/career-cornertkb-board)
+  - RSS Feed: [https://community.sap.com/khhcw49343/rss/board?board.id=career-cornertkb-board](https://community.sap.com/khhcw49343/rss/board?board.id=career-cornertkb-board)
 - Enterprise Architecture Knowledge Base:
-  - Website: https://community.sap.com/t5/enterprise-architecture-knowledge-base/tkb-p/Enterprise-Architecturetkb-board
-  - RSS feed: https://community.sap.com/khhcw49343/rss/board?board.id=Enterprise-Architecturetkb-board
+  - Website: [https://community.sap.com/t5/enterprise-architecture-knowledge-base/tkb-p/Enterprise-Architecturetkb-board](https://community.sap.com/t5/enterprise-architecture-knowledge-base/tkb-p/Enterprise-Architecturetkb-board)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=Enterprise-Architecturetkb-board](https://community.sap.com/khhcw49343/rss/board?board.id=Enterprise-Architecturetkb-board)
 
 ## Messages
 
@@ -128,12 +128,12 @@ Each piece of content type can also be accessed as a "message" on the platform. 
 
 Examples:
   - Blog post - *Elevating ERP Efficiency: Achieving Excellence with SAP Clean Core*:
-    - Website: https://community.sap.com/t5/enterprise-architecture-blog-posts/elevating-erp-efficiency-achieving-excellence-with-sap-clean-core/ba-p/13572668
-    - RSS Feed: https://community.sap.com/khhcw49343/rss/message?board.id=Enterprise-Architectureblog-board&message.id=515
+    - Website: [https://community.sap.com/t5/enterprise-architecture-blog-posts/elevating-erp-efficiency-achieving-excellence-with-sap-clean-core/ba-p/13572668](https://community.sap.com/t5/enterprise-architecture-blog-posts/elevating-erp-efficiency-achieving-excellence-with-sap-clean-core/ba-p/13572668)
+    - RSS Feed: [https://community.sap.com/khhcw49343/rss/message?board.id=Enterprise-Architectureblog-board&message.id=515](https://community.sap.com/khhcw49343/rss/message?board.id=Enterprise-Architectureblog-board&message.id=515)
   - Knowledge base entry - 
 *Become a Paid expert for PLATFORM TECHNOLOGIES – Ask an Expert Peer*:
-    - Website: https://community.sap.com/t5/career-corner-job-opportunities/become-a-paid-expert-for-platform-technologies-ask-an-expert-peer/ta-p/127063
-    - RSS feed: https://community.sap.com/khhcw49343/rss/message?board.id=career-cornertkb-board&message.id=33
+    - Website: [https://community.sap.com/t5/career-corner-job-opportunities/become-a-paid-expert-for-platform-technologies-ask-an-expert-peer/ta-p/127063](https://community.sap.com/t5/career-corner-job-opportunities/become-a-paid-expert-for-platform-technologies-ask-an-expert-peer/ta-p/127063)
+    - RSS feed: [https://community.sap.com/khhcw49343/rss/message?board.id=career-cornertkb-board&message.id=33](https://community.sap.com/khhcw49343/rss/message?board.id=career-cornertkb-board&message.id=33)
 
 > In the examples above you can see how we are specifying a particular board (`board.id`) and message identifier (`message.id`).
 
@@ -144,9 +144,9 @@ There are many tags in the platform and we can retrieve content based on tags. Y
 > Note: The feed will contain different content types, e.g. blog posts, questions. Here you can also specify the `count` query parameter explained previously.
 
 Examples:
-- ABAP Cloud: https://community.sap.com/khhcw49343/rss/search?q=tags:ABAP%20Cloud
-- SAP Ariba Extensibility: https://community.sap.com/khhcw49343/rss/search?q=tags:SAP%20Ariba%20Extensibility
-- SAP Integration Suite: https://community.sap.com/khhcw49343/rss/search?q=tags:SAP%20Integration%20Suite
+- ABAP Cloud: [https://community.sap.com/khhcw49343/rss/search?q=tags:ABAP%20Cloud](https://community.sap.com/khhcw49343/rss/search?q=tags:ABAP%20Cloud)
+- SAP Ariba Extensibility: [https://community.sap.com/khhcw49343/rss/search?q=tags:SAP%20Ariba%20Extensibility](https://community.sap.com/khhcw49343/rss/search?q=tags:SAP%20Ariba%20Extensibility)
+- SAP Integration Suite: [https://community.sap.com/khhcw49343/rss/search?q=tags:SAP%20Integration%20Suite](https://community.sap.com/khhcw49343/rss/search?q=tags:SAP%20Integration%20Suite)
 
 ## Users
 
