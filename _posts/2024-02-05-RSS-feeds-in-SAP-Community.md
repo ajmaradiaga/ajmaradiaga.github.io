@@ -30,14 +30,14 @@ The new platform has a mechanism through which you can retrieve, based on conten
 
 Below are the RSS feeds, based on content types, that I have found so far:
 
-- Everything that's happening in SAP Community: https://community.sap.com/khhcw49343/rss/Community
-- All blog posts: https://community.sap.com/khhcw49343/rss/Community?interaction.style=blog
+- Everything that's happening in SAP Community: [https://community.sap.com/khhcw49343/rss/Community](https://community.sap.com/khhcw49343/rss/Community)
+- All blog posts: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=blog](https://community.sap.com/khhcw49343/rss/Community?interaction.style=blog)
 - All questions: I believe that this was possible in the old platform but I haven't been able to find a feed that just includes all questions in the new platform. The best alternative will be to get everything that's happening in the community.
-- All discussions: https://community.sap.com/khhcw49343/rss/Community?interaction.style=forum
-- All events: https://community.sap.com/khhcw49343/rss/Community?interaction.style=occasion
-- All knowledge base articles: https://community.sap.com/khhcw49343/rss/Community?interaction.style=tkb
+- All discussions: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=forum](https://community.sap.com/khhcw49343/rss/Community?interaction.style=forum)
+- All events: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=occasion](https://community.sap.com/khhcw49343/rss/Community?interaction.style=occasion)
+- All knowledge base articles: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=tkb](https://community.sap.com/khhcw49343/rss/Community?interaction.style=tkb)
 
-If you want to include replies in the feed and specify the numbers of items retrieved, you can do so by adding the `feeds.replies` and `count` parameters to the URL. For example, to get the last 42 blog posts with replies included, you can use the following URL: https://community.sap.com/khhcw49343/rss/Community?interaction.style=blog&feeds.replies=true&count=42.
+If you want to include replies in the feed and specify the numbers of items retrieved, you can do so by adding the `feeds.replies` and `count` parameters to the URL. For example, to get the last 42 blog posts with replies included, you can use the following URL: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=blog&feeds.replies=true&count=42](https://community.sap.com/khhcw49343/rss/Community?interaction.style=blog&feeds.replies=true&count=42).
 
 We've seen before how we can get the feed for the entire community. Now let's see how to get the feed for specific areas of the community.
 
