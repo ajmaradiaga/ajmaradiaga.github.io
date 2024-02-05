@@ -10,6 +10,7 @@ twitter:
 # Includes an icon in the footer for each username you enter
 footer-links:
   email: me@ajmaradiaga.com
+  rss: https://ajmaradiaga.com/feed.xml
   github: ajmaradiaga
   linkedin: ajmaradiaga
   twitter: ajmrdg
