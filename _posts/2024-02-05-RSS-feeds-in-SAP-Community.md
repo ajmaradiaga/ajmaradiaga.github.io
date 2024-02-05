@@ -117,6 +117,36 @@ Examples:
   - Website: [https://community.sap.com/t5/enterprise-architecture-knowledge-base/tkb-p/Enterprise-Architecturetkb-board](https://community.sap.com/t5/enterprise-architecture-knowledge-base/tkb-p/Enterprise-Architecturetkb-board)
   - RSS feed: [https://community.sap.com/khhcw49343/rss/board?board.id=Enterprise-Architecturetkb-board](https://community.sap.com/khhcw49343/rss/board?board.id=Enterprise-Architecturetkb-board)
 
+## Categories
+
+<p align = "center">
+    <img alt="SAP Community categories" src="../images/sap-community-categories.png" width="80%"/><br/>
+    <i>SAP Community categories</i>
+</p>
+
+Part of the content in the platform is subdivided into categories. It is possible to get an RSS feed at the category level. The categories available are:
+- Customer Relationship Management
+- Enterprise Resource Planning
+- Financial Management
+- Human Capital Management
+- Product Lifecycle Management
+- Spend Management
+- Supply Chain Management
+- Technology
+
+Examples:
+- Customer Relationship Management:
+  - Website: [https://community.sap.com/t5/customer-relationship-management/ct-p/crm](https://community.sap.com/t5/customer-relationship-management/ct-p/crm)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/Category?category.id=crm](https://community.sap.com/khhcw49343/rss/Category?category.id=crm)
+- Spend Management:
+  - Website: [https://community.sap.com/t5/spend-management/ct-p/spend-management](https://community.sap.com/t5/spend-management/ct-p/spend-management)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/Category?category.id=spend-management](https://community.sap.com/khhcw49343/rss/Category?category.id=spend-management)
+- Technology: 
+  - Website: [https://community.sap.com/t5/technology/ct-p/technology](https://community.sap.com/t5/technology/ct-p/technology)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/Category?category.id=technology](https://community.sap.com/khhcw49343/rss/Category?category.id=technology)
+
+> You'll notice when visiting the website of the categories above that they contain a Boards section within it. There are other areas of the SAP Community that follow this "pattern" and under the hood they are also categories, e.g. [Groups](https://community.sap.com/t5/groups/ct-p/groups), [Location Groups](https://community.sap.com/t5/location-groups/ct-p/location), [Europe](https://community.sap.com/t5/europe/ct-p/europe). In this case you can use the Category RSS URL and get all the content for that particular section, e.g. Location Group > Europe - [https://community.sap.com/khhcw49343/rss/Category?category.id=europe](https://community.sap.com/khhcw49343/rss/Category?category.id=europe)
+
 ## Messages
 
 Each piece of content type can also be accessed as a "message" on the platform. We can subscribe to an RSS feed for a particular piece of content, e.g. a blog post, a discussion, or a knowledge base entry.
@@ -127,13 +157,13 @@ Each piece of content type can also be accessed as a "message" on the platform. 
 </p>
 
 Examples:
-  - Blog post - *Elevating ERP Efficiency: Achieving Excellence with SAP Clean Core*:
-    - Website: [https://community.sap.com/t5/enterprise-architecture-blog-posts/elevating-erp-efficiency-achieving-excellence-with-sap-clean-core/ba-p/13572668](https://community.sap.com/t5/enterprise-architecture-blog-posts/elevating-erp-efficiency-achieving-excellence-with-sap-clean-core/ba-p/13572668)
-    - RSS Feed: [https://community.sap.com/khhcw49343/rss/message?board.id=Enterprise-Architectureblog-board&message.id=515](https://community.sap.com/khhcw49343/rss/message?board.id=Enterprise-Architectureblog-board&message.id=515)
-  - Knowledge base entry - 
+- Blog post - *Elevating ERP Efficiency: Achieving Excellence with SAP Clean Core*:
+  - Website: [https://community.sap.com/t5/enterprise-architecture-blog-posts/elevating-erp-efficiency-achieving-excellence-with-sap-clean-core/ba-p/13572668](https://community.sap.com/t5/enterprise-architecture-blog-posts/elevating-erp-efficiency-achieving-excellence-with-sap-clean-core/ba-p/13572668)
+  - RSS Feed: [https://community.sap.com/khhcw49343/rss/message?board.id=Enterprise-Architectureblog-board&message.id=515](https://community.sap.com/khhcw49343/rss/message?board.id=Enterprise-Architectureblog-board&message.id=515)
+- Knowledge base entry - 
 *Become a Paid expert for PLATFORM TECHNOLOGIES – Ask an Expert Peer*:
-    - Website: [https://community.sap.com/t5/career-corner-job-opportunities/become-a-paid-expert-for-platform-technologies-ask-an-expert-peer/ta-p/127063](https://community.sap.com/t5/career-corner-job-opportunities/become-a-paid-expert-for-platform-technologies-ask-an-expert-peer/ta-p/127063)
-    - RSS feed: [https://community.sap.com/khhcw49343/rss/message?board.id=career-cornertkb-board&message.id=33](https://community.sap.com/khhcw49343/rss/message?board.id=career-cornertkb-board&message.id=33)
+  - Website: [https://community.sap.com/t5/career-corner-job-opportunities/become-a-paid-expert-for-platform-technologies-ask-an-expert-peer/ta-p/127063](https://community.sap.com/t5/career-corner-job-opportunities/become-a-paid-expert-for-platform-technologies-ask-an-expert-peer/ta-p/127063)
+  - RSS feed: [https://community.sap.com/khhcw49343/rss/message?board.id=career-cornertkb-board&message.id=33](https://community.sap.com/khhcw49343/rss/message?board.id=career-cornertkb-board&message.id=33)
 
 > In the examples above you can see how we are specifying a particular board (`board.id`) and message identifier (`message.id`).
 
