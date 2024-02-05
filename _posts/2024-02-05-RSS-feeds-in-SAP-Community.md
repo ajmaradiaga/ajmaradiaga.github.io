@@ -152,6 +152,8 @@ Examples:
 
 In the previous platform, it was possible to generate a feed based on the activity of a specific user. This was very useful to me to check out the content created by some community members that I follow, it could be blog posts, comments or answers to questions. Unfortunately, I haven't found a way to do this on the new platform. If you know how to do this, please let me know in the comments. I'll update this section if I end up finding a way to achieve this.
 
+Not strictly an RSS feed but it is possible to get all content created by a user via the Khoros API using [LiQL](https://developer.khoros.com/khoroscommunitydevdocs/docs/using-liql), e.g. [https://community.sap.com/api/2.0/search?q=select id, view_href, author.login, subject, body, board.id, board.view_href, conversation.style from messages where author.login='ajmaradiaga' LIMIT 10](https://community.sap.com/api/2.0/search?q=select id, view_href, author.login, subject, body, board.id, board.view_href, conversation.style from messages where author.login='ajmaradiaga' LIMIT 10)
+
 ---
 
 I hope these findings useful for you as they are for me. Now go ahead and add some feeds to your favourite RSS reader :-).
