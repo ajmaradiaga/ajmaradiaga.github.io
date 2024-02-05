@@ -32,7 +32,7 @@ Below are the RSS feeds, based on content types, that I have found so far:
 
 - Everything that's happening in SAP Community: [https://community.sap.com/khhcw49343/rss/Community](https://community.sap.com/khhcw49343/rss/Community)
 - All blog posts: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=blog](https://community.sap.com/khhcw49343/rss/Community?interaction.style=blog)
-- All questions: I believe that this was possible in the old platform but I haven't been able to find a feed that just includes all questions in the new platform. The best alternative will be to get everything that's happening in the community.
+- All questions: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=qanda](https://community.sap.com/khhcw49343/rss/Community?interaction.style=qanda)
 - All discussions: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=forum](https://community.sap.com/khhcw49343/rss/Community?interaction.style=forum)
 - All events: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=occasion](https://community.sap.com/khhcw49343/rss/Community?interaction.style=occasion)
 - All knowledge base articles: [https://community.sap.com/khhcw49343/rss/Community?interaction.style=tkb](https://community.sap.com/khhcw49343/rss/Community?interaction.style=tkb)
