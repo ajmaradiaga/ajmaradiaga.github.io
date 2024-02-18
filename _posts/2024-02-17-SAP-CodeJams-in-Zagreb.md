@@ -9,7 +9,7 @@ This week I had the opportunity to visit for the first time Zagreb, Croatia 🇭
 
 ![Stjepan from Morgan Solution kicking off the event](../images/codejam-zagreb-stjepan.jpg)
 
-The events were kindly hosted by [Morgan Solutions](https://morgansolutions.eu/) who booked for us a nice venue, @ [Business Club 5 - Sky Office](https://maps.app.goo.gl/fehW8wRmHZykBWjE9), where we could work and provided plenty of delicious food and drinks as well. Thanks to the team at Morgan Solutions (Stjepan, Igor, Dino, Bojan, Darko, Guido), for all your efforts in organising the events :-).
+The events were kindly hosted by [Morgan Solutions](https://morgansolutions.eu/) who booked for us a nice venue, @ [Business Club 5 - Sky Office](https://maps.app.goo.gl/fehW8wRmHZykBWjE9), where we could work and provided plenty of delicious food and drinks as well. Thanks to the team at Morgan Solutions ([Stjepan Miličić](https://www.linkedin.com/in/stjepan-mili%C4%8Di%C4%87-348927220/), [Dino Višnjić](https://www.linkedin.com/in/visnjic/), [Bojan Bernik](https://www.linkedin.com/in/bojanbernik/), [Darko Pavic](https://www.linkedin.com/in/darkopavic/)), for all your efforts in organising the events :-).
 
 ![Photo of attendees - day 1](../images/codejam-zagreb-attendees-1.jpg)
 
