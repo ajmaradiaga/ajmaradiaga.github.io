@@ -19,7 +19,7 @@ The events were kindly hosted by [Morgan Solutions](https://morgansolutions.eu/)
 
 ![Photo of drinks available](../images/codejam-zagreb-drinks.jpg)
 
-Some of the attendees joined the events on both days. This makes me quite happy as they got enough value from the first day that they decided to return the second day :-). There was a great atmosphere on both days and I believe that attendees learned a lot and had a great time during the events. Something that is quite encouraging is that we also have some conversations around how they can host/organise future events, e.g. SAP CodeJams or even SAP TechEd/Devtoberfest watch parties.
+Some of the attendees joined the events on both days. This makes me quite happy as they got enough value from the first day that they decided to return the second day :-). There was a great atmosphere on both days and I believe that attendees learned a lot and had a great time during the events. Something that is quite encouraging is that we also had some conversations around how they can host/organise future events, e.g. SAP CodeJams or even SAP TechEd/Devtoberfest watch parties.
 
 ![Before starting day 2](../images/codejam-zagreb-day-2.jpg)
 
@@ -27,4 +27,4 @@ Some of the attendees joined the events on both days. This makes me quite happy 
 
 ![Photo of stickers in laptop](../images/codejam-zagreb-opportunity-for-all.jpg)
 
-Without a doubt, there is a bright future for the SAP Community in Zagreb. I'm looking forward to seeing how it evolves and grows in the near future.
+Without a doubt, there is a bright future for the SAP Community in Zagreb. Thanks to everyone who attended the event, it was great meeting you there and I'm looking forward to seeing how it evolves and grows in the near future.
