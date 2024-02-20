@@ -86,3 +86,7 @@ Also, the current platform doesn't allow getting an RSS feed for a community mem
 ---
 
 *I hope this helps filter out all the information that's available in the SAP Community platform and that it can help you follow the information and members that you are really interested in.*
+
+Let's keep the conversation going....
+- LinkedIn: [https://www.linkedin.com/posts/ajmaradiaga_additional-sap-community-feeds-activity-7165731257664884737-iarh](https://www.linkedin.com/posts/ajmaradiaga_additional-sap-community-feeds-activity-7165731257664884737-iarh)
+- Mastodon: [https://fedi.ajmaradiaga.com/deck/@antonio/111964552620005324](https://fedi.ajmaradiaga.com/deck/@antonio/111964552620005324)
