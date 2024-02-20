@@ -16,6 +16,8 @@ Lately there's been [quite](https://www.itsfullofstars.de/2024/02/what-if-it-is-
 
 The current platform doesn't allow getting an RSS feed for an SAP Managed Tags, aka [Topics](https://pages.community.sap.com/topics). Not all topics available in SAP Community are included here. Below I'm sharing a sample of the topics available now and you'll be able to see the full list here - [topics](https://github.com/ajmaradiaga/feeds/blob/main/scmt/topics/README.md).
 
+> You can suggest a new SAP Managed Tag feed by [creating an issue](https://github.com/ajmaradiaga/feeds/issues/new?assignees=&labels=topic&projects=&template=new-topic.yml&title=Please+include+%5BTopic+name%5D+in+the+feed+generator) in the GitHub repo.
+
 | **Topic**                                  | **Blog posts feed**                                                                                                                   | **Q&A feed**                                                                                                                  | **Frequency** |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------- |
 | ABAP Cloud                                 | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/topics/ABAP-Cloud-blog-posts.xml)                                 | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/topics/ABAP-Cloud-qa.xml)                                 | 3 hours       |
@@ -39,6 +41,8 @@ The current platform doesn't allow getting an RSS feed for an SAP Managed Tags, 
 ## SAP Community Members
 
 Also, the current platform doesn't allow getting an RSS feed for a community member. It will be quite an expensive task to generate a feed for every single member of the community, therefore I'm only including feeds for the [Developer Advocates team](https://developers.sap.com/developer-advocates.html) and a couple of examples from SAP Mentors and SAP Champions. Below I'm sharing a sample of the community member feeds available now and you'll be able to see the full list here - [members](https://github.com/ajmaradiaga/feeds/blob/main/scmt/members/README.md).
+
+> You can suggest a new SAP Community Member feed by [creating an issue](https://github.com/ajmaradiaga/feeds/issues/new?assignees=&labels=members&projects=&template=new-community-member.yml&title=Please+include+%5BSAP+Community+member%5D+in+the+feed+generator) in the GitHub repo.
 
 | **Developer Advocates** | **Username**    | **Feed**                                                                                                             | **Frequency** |
 | ----------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------- | ------------- |
