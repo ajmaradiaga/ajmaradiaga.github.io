@@ -81,4 +81,4 @@ Also, the current platform doesn't allow getting an RSS feed for a community mem
 
 ---
 
-*I hope _this helps _filter_ out all_ the information that's available in the SAP Community platform and that it can help you follow the information and members that you are really interested in.*
+*I hope this helps filter out all the information that's available in the SAP Community platform and that it can help you follow the information and members that you are really interested in.*
