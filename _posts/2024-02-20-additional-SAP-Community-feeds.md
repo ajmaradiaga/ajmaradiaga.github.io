@@ -71,12 +71,17 @@ Also, the current platform doesn't allow getting an RSS feed for a community mem
 | **SAP Mentors** | **Username**   | **Feed**                                                                                                    | **Frequency** |
 | --------------- | -------------- | ----------------------------------------------------------------------------------------------------------- | ------------- |
 | Geert-Jan Klaps | geert-janklaps | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/members/sap-mentors/geert-janklaps.xml) | 24 hours      |
+| Gregor Wolf     | gregorw        | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/members/sap-mentors/gregorw.xml)        | 24 hours      |
 | Morten Wittrock | MortenWittrock | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/members/sap-mentors/MortenWittrock.xml) | 24 hours      |
+| Tammy Powlas    | TammyPowlas    | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/members/sap-mentors/TammyPowlas.xml)    | 24 hours      |
+| Volker Buzek    | vobu           | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/members/sap-mentors/vobu.xml)           | 24 hours      |
+
 
 ---
 
 | **SAP Champions**  | **Username**   | **Feed**                                                                                                      | **Frequency** |
 | ------------------ | -------------- | ------------------------------------------------------------------------------------------------------------- | ------------- |
+| David Ruiz Badia   | david_ruizb    | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/members/sap-champions/david_ruizb.xml)    | 24 hours      |
 | Martin Pankraz     | Martin-Pankraz | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/members/sap-champions/Martin-Pankraz.xml) | 24 hours      |
 | Murali Shanmugham  | Murali_Shan    | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/members/sap-champions/Murali_Shan.xml)    | 24 hours      |
 | Mustafa Bensan     | MustafaBensan  | [URL](https://raw.githubusercontent.com/ajmaradiaga/feeds/main/scmt/members/sap-champions/MustafaBensan.xml)  | 24 hours      |
