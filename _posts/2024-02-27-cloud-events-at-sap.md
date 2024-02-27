@@ -80,13 +80,18 @@ A CloudEvent message is mainly composed of context attributes and data.
 
 A number of attributes can be included within the message, these attributes are known as [Context Attributes](https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#context-attributes) and the idea is that these context attributes can be used to describe the event. We can think of these context attributes as the header information of our event. Let's explore some of the attributes available.
 
-| Name | Required | Description | Example |
+<p align = "center">
+  <img alt="CloudEvent context attributes" src="../images/ce-context-attributes-table.png" width="90%"/><br/>
+  <i>CloudEvent context attributes</i>
+</p>
+
+<!-- | Name | Required | Description | Example |
 | ---- | ----- | ---- | --- |
 | id | ✅ | Identifies the event. Producers MUST ensure that source + id is unique for each distinct event. | 63d6a150-c6a1-4c5b-bcc3-27d90c07941c |
 | source | ✅ | Identifies the context in which an event happened. | /default/sap.s4.beh/244572008 |
 | specversion | ✅ | The version of the CloudEvents specification which the event uses. | `1.0` |
 | type | ✅ | Describes the type of the event | `sap.s4.beh.businesspartner.v1.BusinessPartner.Changed.v1` |
-| datacontenttype | | Content type of the value in data. | `application/json` |
+| datacontenttype | | Content type of the value in data. | `application/json` | -->
 
 
 #### Extension Context Attributes
@@ -182,7 +187,7 @@ SAP offers various services that can help customers embrace event-driven archite
 ### [SAP Event Broker for SAP cloud applications](https://discovery-center.cloud.sap/serviceCatalog/sap-event-broker?region=all&service_plan=standard&commercialModel=cpea)
 
 <p align = "center">
-  <img alt="SAP Event Broker for SAP cloud applications" src="../images/sap-event-broker.png" width="15%"/><br/>
+  <img alt="SAP Event Broker for SAP cloud applications logo" src="../images/sap-event-broker.png" width="15%"/><br/>
   <i>SAP Event Broker for SAP cloud applications</i>
 </p>
 
@@ -200,15 +205,15 @@ If all your event needs are within the SAP cloud world, e.g. exchange events bet
 ### [SAP Event Mesh](https://discovery-center.cloud.sap/serviceCatalog/event-mesh?region=all)
 
 <p align = "center">
-  <img alt="SAP Event Mesh" src="../images/event-mesh.png" width="15%"/><br/>
+  <img alt="SAP Event Mesh logo" src="../images/event-mesh.png" width="15%"/><br/>
   <i>SAP Event Mesh</i>
 </p>
 
 SAP Event Mesh allows applications to communicate through asynchronous events. It can be used to publish and consume business events from SAP and non-SAP sources across hybrid landscapes from the digital core (ERP products, e.g. SAP S/4HANA Cloud public edition and SAP S/4HANA) to extension applications through event-driven architecture. It is a fully managed [centralised event-oriented](https://help.sap.com/docs/event-mesh/event-mesh/event-mesh-default-plan-concepts?locale=en-US) service part of SAP BTP.
 
 <p align = "center">
-  <img alt="SAP Event Mesh" src="../images/event-mesh-diagram.png" width="85%"/><br/>
-  <i>SAP Event Mesh</i>
+  <img alt="Centralised service" src="../images/event-mesh-diagram.png" width="85%"/><br/>
+  <i>Centralised service</i>
 </p>
 
 The [service supports the use of REST APIs for Events](https://help.sap.com/docs/event-mesh/event-mesh/rest-apis-for-events?locale=en-US), for publishing and consuming events that are compliant with the CloudEvents specification. Related to event-based integrations, events that flow through SAP Event Mesh between SAP applications must all conform to the CloudEvents specification. 
@@ -218,7 +223,7 @@ The [service supports the use of REST APIs for Events](https://help.sap.com/docs
 ### [SAP Integration Suite, advanced event mesh](https://discovery-center.cloud.sap/serviceCatalog/advanced-event-mesh?region=all) (AEM)
 
 <p align = "center">
-  <img alt="SAP Integration Suite, advanced event mesh" src="../images/advanced-event-mesh.png" width="15%"/><br/>
+  <img alt="SAP Integration Suite, advanced event mesh logo" src="../images/advanced-event-mesh.png" width="15%"/><br/>
   <i>SAP Integration Suite, advanced event mesh</i>
 </p>
 
