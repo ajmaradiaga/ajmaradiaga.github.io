@@ -172,6 +172,16 @@ SAP's flagship ERP products, SAP S/4HANA Cloud Public edition and SAP S/4HANA, e
 }
 ```
 
+### Kyma
+
+<p align = "center">
+  <img alt="Kyma runtime logo" src="../images/kyma-runtime.png" width="15%"/><br/>
+  <i>Kyma runtime</i>
+</p>
+
+Kyma contains an [Eventing module](https://kyma-project.io/#/06-modules/README), which provides functionality to publish and subscribe to CloudEvents. It follows the PubSub messaging pattern and all events in Kyma conform to the CloudEvents specification[^5]. At the moment, NATS (provided by the NATS module) and SAP Event Mesh are [supported as backends](https://help.sap.com/docs/btp/sap-business-technology-platform/choose-backend-for-kyma-eventing) for eventing and it is recommended to use the CloudEvents specification for sending and receiving events. Even the legacy events are automatically converted to CloudEvents. 
+
+
 ## SAP's event-driven portfolio
 
 <p align = "center">
@@ -247,3 +257,4 @@ Thanks for making it this far, we've covered a lot in this blog post and I hope 
 [^2]: What is an event broker?: [link](https://solace.com/what-is-an-event-broker/).
 [^3]: What is the publish-subscribe messaging pattern?: [link](https://solace.com/blog/publish-subscribe-messaging-pattern/)
 [^4]: SAP Event-Driven integrations: [link](https://help.sap.com/docs/event-broker/event-broker-service-guide/event-driven-integrations?locale=en-US%3Fversion%3DCloud). 
+[^5]: Eventing module in Kyma: [link](https://kyma-project.io/#/eventing-manager/user/README).
