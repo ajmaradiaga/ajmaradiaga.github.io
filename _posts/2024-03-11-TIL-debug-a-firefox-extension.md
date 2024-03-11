@@ -12,7 +12,7 @@ Steps:
 - Click Inspect next to the extension.
 
 <p align = "center">
-  <img alt="Debugging Brief Firefox extension" src="../images/debug-firefox-extension.png" width="15%"/><br/>
+  <img alt="Debugging Brief Firefox extension" src="../images/debug-firefox-extension.png" width="100%"/><br/>
   <i>Debugging Brief Firefox extension</i>
 </p>
 
