@@ -3,7 +3,7 @@ layout: post
 title: TIL - Running linux/amd64 Dev Containers on Apple Silicon
 ---
 
-Today I learned how to force a [VSCode Dev Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container) to run on `X86_64` architecture on my Mac. In essence, build a custom docker image by specifying a Dockerfile and in the FROM statement of the Dockerfile, specify the `--platform` flag. When you spin up the DevContainer it will automatically use the platform specified. If no platform is specified then the Dev Container will run on the platform of your OS, in my case `aarch64` and this was causing an issue when I was trying to run a Python program, as the program requires a [library](https://pypi.org/project/solace-pubsubplus/#files) that's only available for the `X86_64` architecture.
+Today I learned how to force a [VSCode Dev Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container) to run on `amd64` architecture on my Mac. In essence, build a custom docker image by specifying a Dockerfile and in the FROM statement of the Dockerfile, specify the `--platform` flag. When you spin up the DevContainer it will automatically use the platform specified. If no platform is specified then the Dev Container will run on the platform of your OS, in my case `aarch64` and this was causing an issue when I was trying to run a Python program, as the program requires a [library](https://pypi.org/project/solace-pubsubplus/#files) that's only available for the `amd64` architecture.
 
 **Dockerfile**
 ```docker
