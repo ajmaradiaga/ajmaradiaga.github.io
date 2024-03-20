@@ -60,7 +60,7 @@ code tunnel service install
 code tunnel logs
 ```
 
-What's great about this approach is that the code stays in the client and you can run the Dev Containers in the right architecture on the remote machine.
+What's great about this approach is that you don't need SSH access in the remote machine and you can run the Dev Containers in the right architecture on the remote machine.
 
 [^1]: Developing inside a container: [link](https://code.visualstudio.com/docs/devcontainers/containers).
 [^2]: Developing with Remote Tunnels: [link](https://code.visualstudio.com/docs/remote/tunnels).
