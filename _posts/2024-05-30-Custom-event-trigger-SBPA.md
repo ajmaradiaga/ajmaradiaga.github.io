@@ -3,7 +3,7 @@ layout: post
 title: Can a custom event trigger a process in SAP Build Process Automation? 
 ---
 
-TLDR; No.
+**TLDR;** No. Only predefined events can trigger a process in SAP Build Process Automation.
 
 My last interactions with SAP Build Process Automation revolve around how you can trigger process by using events. We know that when configuring a process, one of the triggers can be set to start it is an event - [Create an event to start a process](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/create-event-triggers). At the moment, the UI only let's you select the events from a dropdown this is limited to some predefined business events.
 
