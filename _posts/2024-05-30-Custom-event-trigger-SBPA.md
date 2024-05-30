@@ -22,7 +22,7 @@ By looking under the hood (Web browser, developer tools) I noticed that when set
 }
 ```
 
-The `sourceArtifactUid` field is set to `sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1`. This is the event that triggers the process. I've seen this value before when dealing with the SAP S/4HANA Cloud Business Partner events.... this is the value set in the type field of the event payload. Remember that SAP has embraced the CloudEvents specification and the type field will be included in the header (context) part of the event message. This got me wondering, what would happen if I set a different value in the `sourceArtifactUid` field in the request? Will it accept it as a trigger? Let's try it.
+The `sourceArtifactUid` field is set to `sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1`. This is the event that triggers the process. I've seen this value before when dealing with the SAP S/4HANA Cloud Business Partner events.... this is the value set in the type field of the event payload. Remember that [SAP has embraced the CloudEvents specification](https://ajmaradiaga.com/cloud-events-at-sap/) and the type field will be included in the header (context) part of the event message. This got me wondering, what would happen if I set a different value in the `sourceArtifactUid` field in the request? Will it accept it as a trigger? Let's try it.
 
 ```json
 {
